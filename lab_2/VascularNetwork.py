@@ -16,7 +16,7 @@ class VascularNetwork:
         return 1 / G
 
     @staticmethod
-    def calculate_basic_network(arteolies: list, branches: list, aorta: "Vessel"):
+    def calculate_basic_network(arteolies: list, branches: list, aorta: Vessel):
         """Calculates the hydrodynamic resistance of the basic system: two identical parallel arteries connected to two
         identical parallel branches connected to the aorta."""
         R_arteolie1 = arteolies[0] | arteolies[1]
